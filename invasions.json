@@ -1,0 +1,25 @@
+{
+"invasions": {
+	"Loonyville": {
+		"began": 1484846032, 
+		"total": 2038, 
+		"type": "Back Stabber", 
+		"remaining": 2032
+	}, 
+	"SillyRapids": {
+		"began": 1484847174, 
+		"total": 2916,
+		"type": "Double Talker",
+		"remaining": 2866
+	}, 
+  	"NuttyRiver": {
+  		"began": 1484847174, 
+  		"total": 2384, 
+  		"type": "Legal Eagle", 
+  		"remaining": 2378
+  	}
+}, 
+"responseCode": 3, 
+"lastUpdated": 1484847536, 
+"success": true
+}

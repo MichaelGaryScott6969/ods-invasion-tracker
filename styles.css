@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+
+html,
+body
+{
+	/* background: linear-gradient(270deg, violet, #866ee7); */
+	background-size: 100%;
+	margin: 0;
+	padding: 0 0 50px 0;
+}
+div.header {
+	margin: 0;
+	background-color: #DB37F3;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+
+img.img-logo {
+	height: 125px;	
+	margin: 0;
+	padding: 5px;
+}
+
+
+h1.header-h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	text-align: center;
+	color: #fff;
+}
+
+div.invasion-container {
+	width: 60%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-size: 5px;
+	border-color: #6b6b6b;	
+	padding: 20px;
+	text-align: center;
+}
+
+h2.invasion-district {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+div.invasion-loonyville,
+div.invasion-nuttyriver,
+div.invasion-sillyrapids,
+div.invasion-toonvalley,
+div.invasion-zanyacres {
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 200;
+}
+
+div.footer {
+	margin: 0;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+
+p.copyright {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-color: gray;
+	font-weight: 200;
+	background-color: #DB37F3;
+	padding: 20px;
+	padding-left: 40px;
+	margin: 0;
+	color: #fff;
+}
+
+h1.heading-info {
+	color: #fff;
+	font-weight: 200;
+	font-size: 18px;
+	background-color: #20cc48;
+	padding: 15px;
+	border-width: 2px;
+	border-color: #179334;	
+	border-style: solid;
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+	div.footer {
+		height: 75px;
+	}
+
+	p.copyright {
+		font-size: 36px;
+	}
+	img.img-logo {
+		height: 150px;
+	}
+
+	h2.invasion-district {
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+	}
+
+	div.invasion-loonyville,
+	div.invasion-nuttyriver,
+	div.invasion-sillyrapids,
+	div.invasion-toonvalley,
+	div.invasion-zanyacres {
+		font-family: 'Roboto', sans-serif;
+		font-size: 36px;
+		font-weight: 200;
+	}
+	
+	hr {
+		border-width: 3px;
+	}
+}
+
+@media (max-width: 1024px) {
+	div.invasion-container {
+		width: 90%;
+	}
+
+	hr {
+		border-width: 3px;
+	}
+}

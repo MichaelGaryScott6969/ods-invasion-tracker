@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>ODS Invasion Tracker</title>
+		<script src="jquery-3.0.0.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<!-- <script src="https://use.fontawesome.com/0a72681b3a.js"></script> -->
+	</head>
+
+	<body>
+		<div class="header">
+			<center><img src="logo.png" class="img-logo"></center>
+			<h1 class="header-h1">Invasion Tracker</h1>
+		</div>
+
+		<div class="invasion-container">
+			<h1 class="heading-info">Note: The information displayed should update every 5 or so seconds.</h1>
+			<h2 class="invasion-district">Loonyville</h2>
+			<div class="invasion-loonyville">No invasion here!</div>
+			<br>
+
+			<hr>
+
+			<h2 class="invasion-district">Nutty River</h2>
+			<div class="invasion-nuttyriver">No invasion here!</div>
+			<br>
+
+			<hr>
+			
+			<h2 class="invasion-district">Silly Rapids</h2>
+			<div class="invasion-sillyrapids">No invasion here!</div>
+			<br>
+
+			<hr>
+
+			<h2 class="invasion-district">Toon Valley</h2>
+			<div class="invasion-toonvalley">No invasion here!</div>
+			<br>
+
+			<hr>
+
+			<h2 class="invasion-district">Zany Acres</h2>
+			<div class="invasion-zanyacres">No invasion here!</div>
+			<br>
+
+		</div>
+
+		<div class="footer">
+			<p class="copyright">(c) Operation Dessert Storm 2017</p>
+		</div>
+		<script type="text/javascript">
+		
+
+		function reloader() {
+			$.getJSON('https://opdessertstorm.com/api/invasions', function(data) {
+				$timeNow = Math.round(new Date().getTime()/1000); 
+				$( "div.invasion-loonyville" ).html( "There is currently a/an:  <b>" + data.invasions["Loonyville"].type + "</b> invasion going on. There are <b>" + data.invasions["Loonyville"].remaining + "/" + data.invasions["Loonyville"].total + "</b> Cogs remaining. This invasion will end in <b>" + Math.round((30 - ([$timeNow - data.invasions["Loonyville"].began]) / 60)) + " </b> minutes.");
+
+				$( "div.invasion-nuttyriver" ).html( "There is currently a/an:  <b>" + data.invasions["Nutty River"].type + "</b> invasion going on. There are <b>" + data.invasions["Nutty River"].remaining + "/" + data.invasions["Nutty River"].total + "</b> Cogs remaining. This invasion will end in <b>" + Math.round((30 - ([$timeNow - data.invasions["Nutty River"].began]) / 60)) + " </b> minutes.");
+
+				$( "div.invasion-sillyrapids" ).html( "There is currently a/an:  <b>" + data.invasions["Silly Rapids"].type + "</b> invasion going on. There are <b>" + data.invasions["Silly Rapids"].remaining + "/" + data.invasions["Silly Rapids"].total + "</b> Cogs remaining. This invasion will end in <b>" + Math.round((30 - ([$timeNow - data.invasions["Silly Rapids"].began]) / 60)) + " </b> minutes.");
+				
+				$( "div.invasion-toonvalley" ).html( "There is currently a/an:  <b>" + data.invasions["Toon Valley"].type + "</b> invasion going on. There are <b>" + data.invasions["Toon Valley"].remaining + "/" + data.invasions["Toon Valley"].total + "</b> Cogs remaining. This invasion will end in <b>" + Math.round((30 - ([$timeNow - data.invasions["Toon Valley"].began]) / 60)) + " </b> minutes.");
+				
+				$( "div.invasion-zanyacres" ).html( "There is currently a/an:  <b>" + data.invasions["Zany Acres"].type + "</b> invasion going on. There are <b>" + data.invasions["Zany Acres"].remaining + "/" + data.invasions["Zany Acres"].total + "</b> Cogs remaining. This invasion will end in <b>" + Math.round((30 - ([$timeNow - data.invasions["Zany Acres"].began]) / 60)) + " </b> minutes.");
+				});
+
+				setTimeout(reloader,30000);
+			}
+
+			$(document).ready(function(){
+				reloader();
+				$('#loading').hide();
+			});
+						
+		</script>
+	</body>
+</html>
