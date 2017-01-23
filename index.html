@@ -3,8 +3,11 @@
 <html>
 	<head>
 		<title>ODS Invasion Tracker</title>
+		<meta name="viewport" content="width=device-width", initial-scale="1", user-scalable="no">
 		<script src="jquery-3.0.0.min.js"></script>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="styles-redesign.css">
+		<script src="bootstrap.min.js"></script>
 		<!-- <script src="https://use.fontawesome.com/0a72681b3a.js"></script> -->
 	</head>
 
@@ -13,37 +16,37 @@
 			<center><img src="logo.png" class="img-logo"></center>
 			<h1 class="header-h1">Invasion Tracker</h1>
 		</div>
+		<div class="container">
+			<div class="alert alert-success">
+				<p>Note: The information displayed should update every 30 or so seconds.</p>
+			</div>
 
-		<div class="invasion-container">
-			<h1 class="heading-info">Note: The information displayed should update every 5 or so seconds.</h1>
-			<h2 class="invasion-district">Loonyville</h2>
-			<div class="invasion-loonyville">No invasion here!</div>
-			<br>
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-xs-12 invasion-container">
+					<h2 class="invasion-district">Loonyville</h2>
+					<div class="invasion-loonyville">No invasion here!</div>
+				</div>
 
-			<hr>
+				<div class="col-lg-5 col-md-12 col-xs-12 invasion-container col-lg-offset-2">
+					<h2 class="invasion-district">Nutty River</h2>
+					<div class="invasion-nuttyriver">No invasion here!</div>
+				</div>
+		
+				<div class="col-lg-5 col-md-12 col-xs-12 invasion-container"> 
+					<h2 class="invasion-district">Silly Rapids</h2>
+					<div class="invasion-sillyrapids">No invasion here!</div>
+				</div>
 
-			<h2 class="invasion-district">Nutty River</h2>
-			<div class="invasion-nuttyriver">No invasion here!</div>
-			<br>
-
-			<hr>
-			
-			<h2 class="invasion-district">Silly Rapids</h2>
-			<div class="invasion-sillyrapids">No invasion here!</div>
-			<br>
-
-			<hr>
-
-			<h2 class="invasion-district">Toon Valley</h2>
-			<div class="invasion-toonvalley">No invasion here!</div>
-			<br>
-
-			<hr>
-
-			<h2 class="invasion-district">Zany Acres</h2>
-			<div class="invasion-zanyacres">No invasion here!</div>
-			<br>
-
+				<div class="col-lg-5 col-md-12 col-xs-12 invasion-container col-lg-offset-2">
+					<h2 class="invasion-district">Toon Valley</h2>
+					<div class="invasion-toonvalley">No invasion here!</div>
+				</div>
+				
+				<div class="col-lg-5 col-md-12 col-xs-12 invasion-container">
+					<h2 class="invasion-district">Zany Acres</h2>
+					<div class="invasion-zanyacres">No invasion here!</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="footer">

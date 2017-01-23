@@ -7,6 +7,7 @@ body
 	background-size: 100%;
 	margin: 0;
 	padding: 0 0 50px 0;
+	background-color: #2e2e2e;
 }
 div.header {
 	margin: 0;
@@ -30,18 +31,19 @@ h1.header-h1 {
 }
 
 div.invasion-container {
-	width: 60%;
-	margin: 0 auto;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-size: 5px;
-	border-color: #6b6b6b;	
-	padding: 20px;
 	text-align: center;
+	padding: 50px;
+	border-color: #b6b;
+	border-style: solid;
+	border-width: 2px;
+	color: #b9b9b9;
+	margin-bottom: 15px;
+	border-radius: 15px;
 }
 
 h2.invasion-district {
 	text-align: center;
-	font-size: 24px;
+	font-size: 36px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
