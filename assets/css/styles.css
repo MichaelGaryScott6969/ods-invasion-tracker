@@ -9,6 +9,9 @@ body
 	padding: 0 0 50px 0;
 	background-color: #2e2e2e;
 }
+div.right {
+	float: right;
+}
 div.header {
 	margin: 0;
 	background-color: #DB37F3;
@@ -17,7 +20,7 @@ div.header {
 }
 
 img.img-logo {
-	height: 125px;	
+	height: 125px;
 	margin: 0;
 	padding: 5px;
 }
@@ -37,8 +40,12 @@ div.invasion-container {
 	border-style: solid;
 	border-width: 2px;
 	color: #b9b9b9;
-	margin-bottom: 15px;
+	margin: 10px;
 	border-radius: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 200;
+	box-sizing: border-box;
 }
 
 h2.invasion-district {
@@ -46,16 +53,6 @@ h2.invasion-district {
 	font-size: 36px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-}
-
-div.invasion-loonyville,
-div.invasion-nuttyriver,
-div.invasion-sillyrapids,
-div.invasion-toonvalley,
-div.invasion-zanyacres {
-	font-family: 'Roboto', sans-serif;
-	font-size: 28px;
-	font-weight: 200;
 }
 
 div.footer {
@@ -79,28 +76,23 @@ p.copyright {
 	color: #fff;
 }
 
-h1.heading-info {
-	color: #fff;
-	font-weight: 200;
-	font-size: 18px;
-	background-color: #20cc48;
-	padding: 15px;
-	border-width: 2px;
-	border-color: #179334;	
-	border-style: solid;
-	font-family: 'Roboto', sans-serif;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	div.footer {
 		height: 75px;
 	}
 
 	p.copyright {
-		font-size: 36px;
+		font-size: 24px;
 	}
 	img.img-logo {
 		height: 150px;
+	}
+
+	div.invasion-container {
+		height: auto;
+		float: none;
+		margin: 0 auto 10px auto;
+		width: 100%;
 	}
 
 	h2.invasion-district {
@@ -108,29 +100,5 @@ h1.heading-info {
 		font-size: 24px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
-	}
-
-	div.invasion-loonyville,
-	div.invasion-nuttyriver,
-	div.invasion-sillyrapids,
-	div.invasion-toonvalley,
-	div.invasion-zanyacres {
-		font-family: 'Roboto', sans-serif;
-		font-size: 36px;
-		font-weight: 200;
-	}
-	
-	hr {
-		border-width: 3px;
-	}
-}
-
-@media (max-width: 1024px) {
-	div.invasion-container {
-		width: 90%;
-	}
-
-	hr {
-		border-width: 3px;
 	}
 }
