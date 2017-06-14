@@ -20,7 +20,7 @@ div.header {
 }
 
 img.img-logo {
-	height: 125px;	
+	height: 125px;
 	margin: 0;
 	padding: 5px;
 }
@@ -40,20 +40,12 @@ div.invasion-container {
 	border-style: solid;
 	border-width: 2px;
 	color: #b9b9b9;
-	margin-bottom: 15px;
+	margin: 10px;
 	border-radius: 15px;
-	width: 45%;
-	margin: 0 auto 10px auto;	
-	float: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: 28px;
 	font-weight: 200;
-
-}
-
-div.container-custom {
-	margin-left: 10%;
-	margin-right: 10%;
+	box-sizing: border-box;
 }
 
 h2.invasion-district {
@@ -84,18 +76,6 @@ p.copyright {
 	color: #fff;
 }
 
-h1.heading-info {
-	color: #fff;
-	font-weight: 200;
-	font-size: 18px;
-	background-color: #20cc48;
-	padding: 15px;
-	border-width: 2px;
-	border-color: #179334;	
-	border-style: solid;
-	font-family: 'Roboto', sans-serif;
-}
-
 @media (max-width: 1024px) {
 	div.footer {
 		height: 75px;
@@ -120,19 +100,5 @@ h1.heading-info {
 		font-size: 24px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
-	}
-
-	div.invasion-loonyville,
-	div.invasion-nuttyriver,
-	div.invasion-sillyrapids,
-	div.invasion-toonvalley,
-	div.invasion-zanyacres {
-		font-family: 'Roboto', sans-serif;
-		font-size: 36px;
-		font-weight: 200;
-	}
-	
-	hr {
-		border-width: 3px;
 	}
 }
